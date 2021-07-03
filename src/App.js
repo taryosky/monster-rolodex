@@ -11,7 +11,7 @@ class App extends React.Component {
     }
   }
 
-  componentDidMount(){
+  componentDidMount(){ 
     fetch("https://jsonplaceholder.typicode.com/users")
     .then(res => res.json())
     .then(resjson => this.setState({monsters: resjson}));
